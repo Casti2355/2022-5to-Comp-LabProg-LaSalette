@@ -19,7 +19,7 @@ public class JavaApplication1 {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("En que anda la vagancia");
-        int a, b, c, p, mn, my;
+        int a, b, c, p, mm;
         Scanner scanf = new Scanner (System.in);
         System.out.print("Tirame un numero: ");
         a=scanf.nextInt();
@@ -45,9 +45,33 @@ public class JavaApplication1 {
         p= (a+b+c);
         System.out.println("La suma total es: " + p);
         
+        if(a>b && a>c && b>c){
+        mm=a*c;
+        System.out.println("el mayor es: "+a);
+        
+        }else if (a>b && a>c && c>b){
+        mm= a*b;
+        System.out.println("el mayor es: "+a);
+        
+        }else if(b>c && b>c && a>c){
+        mm=b*c;
+        System.out.println ("el mayor es: "+b);
+        
+        }else if (b>a && b>c && c>a){
+        mm= a*b;
+        System.out.println("el mayor es: "+b);
+        
+        }else if (c>b && c>a && a>b){
+        mm= c*b;
+        System.out.println("el mayor es: "+c);
+        
+        }else if (c>b && c>a && b>a){
+        mm= c*a;
+        System.out.println("el mayor es: "+c);
         
         }
-    
+        System.out.println("el producto del mayor y el menor es: "+mm);
+    }
     
     }
     
